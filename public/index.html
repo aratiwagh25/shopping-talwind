@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta ht tp-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Fast performance, uptime 99% guarantee">
+	<meta name="keywords" content="talwind-demo">
+	<title>talwind-demo</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!-- end-swiper-slider -->
+</head>
+
+<body>
+	<nav class="bg-purple-400 py-4">
+		<div class="max-w-6xl mx-auto px-4">
+			<div class="flex justify-between">
+				<div class="bg-gradient-to-r from-purple-400 to-red-400 w-30 h-5 text-3xl rounded-lg">FASHION</div>
+
+				<!-- Primary Navbar items -->
+				<div class="hidden md:flex items-center space-x-1">
+					<a href="#" class="text-green-900 hover:text-black p-4 px-3 sm:px-4">Home</a>
+					<a href="#" class="text-green-900 hover:text-black p-4 px-3 sm:px-4">Shop</a>
+					<a href="#" class="text-green-900 hover:text-black p-4 px-3 sm:px-4">About</a>
+					<a href="#" class="text-green-900 hover:text-black p-4 px-3 sm:px-4">Contact Us</a>
+					<a href="#" class="bg-purple-600 text-gray-50 hover:bg-purple-700 p-3 px-3 sm:px-5 rounded-full">
+						<i class="fa fa-shopping-cart pr-2 text-[20px]"></i>
+						Cart (0)
+					</a>
+				</div>
+
+				<!-- Mobile menu button -->
+				<div class="md:hidden flex items-center">
+					<button class="outline-none mobile-menu-button" aria-label="toggle">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+							stroke="currentColor">
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- mobile menu -->
+		<div class="hidden mobile-menu">
+			<ul class="">
+				<li class="active"><a href="index.html"
+						class="block text-sm px-2 py-4 text-white hover:bg-purple-600 font-semibold">Home</a></li>
+				<li><a href="#services"
+						class="block text-sm px-2 py-4 hover:bg-purple-600 transition duration-300">Shop</a></li>
+				<li><a href="#about"
+						class="block text-sm px-2 py-4 hover:bg-purple-600 transition duration-300">About</a></li>
+				<li><a href="#contact"
+						class="block text-sm px-2 py-4 hover:bg-purple-600 transition duration-300">Contact Us</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- hero ============================== -->
+	<div class="md:flex justify-between py-20 px-10 bg-purple-100">
+
+		<!--   left -->
+		<div class="md:w-1/2 mb-10 md:mb-0">
+			<h2 class="text-2xl md:text-4xl lg:text-6xl text-purple-900 mb-6">Welcome to FASHION City!</h2>
+			<p class="w-fit mb-6 text-purple-600 hover:text-black">There is never a sad day here!</p>
+
+			<a href="#"
+				class="inline-block py-3 px-6 text-lg ease-in duration-500  bg-gradient-to-r from-red-600 to-pink-500  text-white hover:bg-pink-600 hover:from-pink-600 rounded mr-2">Know
+				More</a>
+			<a href="#"
+				class="inline-block py-3 px-6 text-lg ease-in duration-500  bg-gradient-to-r from-purple-600 to-blue-500 hover:bg-blue-600 hover:from-purple-600 text-white rounded">Top-Offer</a>
+		</div>
+
+		<!--   right -->
+		<div class="md:w-1/2">
+			<img src="./images/products/sport/sport-cloth.webp"
+				class="w-full rounded shadow-2xl grayscale-0 hover:grayscale" alt="cloth">
+		</div>
+
+	</div>
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img class="object-cover w-full h-96" src="./images/banner.jpg" alt="apple watch photo" />
+			</div>
+			<div class="swiper-slide">
+				<img class="object-cover w-full h-96" src="./images/banner1.webp" alt="apple watch photo" />
+			</div>
+			<div class="swiper-slide">
+				<img class="object-cover w-full h-96" src="./images/banner1.webp" alt="apple watch photo" />
+			</div>
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+
+
+	<!-- features ============================== -->
+	<div class="md:flex py-16 px-10 bg-purple-200	 font-bold	text-black hover:text-purple-800 transition duration-150 ease-out hover:ease-in tex
+              t-center">
+		<div class="mr-2 text-center">
+			<img class="lg:w-[300px] lg:mr-2.5 mb-4 rounded border-solid border-4 hover:border-8 border-purple-600"
+				src="./images/products/kids/kids-cloth.webp" alt="product">
+			<p>Kid-Wear!</p>
+		</div>
+
+		<div class="mr-2 mt-8 text-center">
+			<img src="./images/products/women/women-cloth.webp"
+				class="lg:w-[300px] lg:mr-2.5 mb-4 rounded border-solid border-4 hover:border-8 border-purple-600 "
+				alt="product">
+			<p>Women!</p>
+		</div>
+
+		<div class="mr-2 text-center">
+			<img src="./images/products/sport/sport-wear.jpg"
+				class="lg:w-[300px] lg:mr-2.5 mb-4 rounded border-solid border-4 hover:border-8 border-purple-600"
+				alt="product">
+			<p>Sport!</p>
+		</div>
+
+		<div class="mr-2 mt-8 text-center">
+			<img src="./images/products/men/men-cloth.jpg"
+				class="lg:w-[300px] mb-4 rounded border-solid border-4 hover:border-8 border-purple-600" alt="product">
+			<p>Men!</p>
+		</div>
+	</div>
+
+
+	<div class="mx-auto p-2 bg-purple-100">
+
+
+		<div class="md:flex md:flex-row mt-20">
+			<div class="md:w-2/5 flex flex-col justify-center items-center">
+				<h2 class="font-serif text-5xl text-gray-600 mb-4 text-center md:self-start md:text-left">Super Saver
+					Summer Sale</h2>
+				<p class="uppercase text-gray-600 tracking-wide text-center md:self-start md:text-left">Up To 70% OFF.
+				</p>
+
+				<a href="#"
+					class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-2 px-4 text-gray-50 uppercase text-xl md:self-start my-5">Shop
+					Now</a>
+			</div>
+
+			<div class="md:w-3/5">
+				<img src="./images/hero-img.svg" class="w-full hover:saturate-200 hover:backdrop-blur-sm bg-white/30"
+					alt="product" />
+			</div>
+		</div>
+
+		<!--end Hero sectioin -->
+		<!-- men Collection Section -->
+		<div class="my-20">
+			<div class="flex flex-row justify-between my-5">
+				<h2 class="text-3xl">Men's Collection</h2>
+
+			</div>
+			<div class="product flex flex-wrap">
+				<div class="p-4 xl:w-1/3 sm:w-1/2 xs:w-[320px]">
+					<div class="shadow-lg rounded-lg">
+
+						<img src="./images/products/men/product1(1).jpg" class="rounded-tl-lg rounded-tr-lg"
+							alt="product" />
+
+						<div class="p-5">
+							<h3><a href="#">Mens T-Shirt</a></h3>
+							<div class="flex flex-row my-3">
+								<div class="bg-slate-400 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-300 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-orange-600 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-amber-400 rounded-full h-5 w-5 shadow-md mr-2"></div>
+							</div>
+							<div class="flex flex-row my-3">
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XXL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">L</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">M</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">S</a>
+							</div>
+							<div class="flex flex-col xl:flex-row justify-between">
+								<a class="btn btn-cart" href="#">
+									<i class="fa fa-shopping-cart pr-2 fa-lg"></i>
+
+									Add to cart
+								</a>
+								<a class="btn btn-details hover:bg-red-400" href="#">
+									<i class="fa fa-arrow-right pr-2"></i>
+
+									View Details
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+					<div class="shadow-lg rounded-lg">
+
+						<img src="./images/products/men/product2(2).jpg" class="rounded-tl-lg rounded-tr-lg"
+							alt="product" />
+
+						<div class="p-5">
+							<h3><a href="#">Slim Khaki Tousers</a></h3>
+							<div class="flex flex-row my-3">
+								<div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-slate-500 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-red-100 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-cyan-50 rounded-full h-5 w-5 shadow-md mr-2"></div>
+							</div>
+							<div class="flex flex-row my-3">
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XXL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">L</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">M</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">S</a>
+							</div>
+							<div class="flex flex-col xl:flex-row justify-between">
+								<a class="btn btn-cart" href="#">
+									<i class="fa fa-shopping-cart pr-2 fa-lg"></i>
+
+									Add to cart
+								</a>
+								<a class="btn btn-details" href="#">
+									<i class="fa fa-arrow-right pr-2"></i>
+
+									View Details
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+					<div class="shadow-lg rounded-lg">
+
+						<img src="./images/products/men/product3 (2).jpg" class="rounded-tl-lg rounded-tr-lg"
+							alt="product" />
+
+
+						<div class="p-5">
+							<h3><a href="#">Nike Shoes</a></h3>
+							<div class="flex flex-row my-3">
+								<div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-red-700 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-slate-500 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-yellow-900 rounded-full h-5 w-5 shadow-md mr-2"></div>
+							</div>
+							<div class="flex flex-row my-3">
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">5</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">6</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">8</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">10</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">11</a>
+							</div>
+							<div class="flex flex-col xl:flex-row justify-between">
+								<a class="btn btn-cart" href="#">
+									<i class="fa fa-shopping-cart pr-2 fa-lg"></i>
+
+									Add to cart
+								</a>
+								<a class="btn btn-details" href="#">
+									<i class="fa fa-arrow-right pr-2"></i>
+
+									View Details
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+					<div class="shadow-lg rounded-lg">
+
+						<img src="./images/products/men/product4(4).jpg" class="rounded-tl-lg rounded-tr-lg"
+							alt="product" />
+
+						<div class="p-5">
+							<h3><a href="#">Wirst Watch</a></h3>
+							<div class="flex flex-row my-3">
+								<div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-amber-900 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-900 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-pink-200 rounded-full h-5 w-5 shadow-md mr-2"></div>
+							</div>
+							<div class="flex flex-row my-3">
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">Circle</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">Square</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">Ellispe</a>
+
+							</div>
+							<div class="flex flex-col xl:flex-row justify-between">
+								<a class="btn btn-cart" href="#">
+									<i class="fa fa-shopping-cart pr-2 fa-lg"></i>
+
+									Add to cart
+								</a>
+								<a class="btn btn-details" href="#">
+									<i class="fa fa-arrow-right pr-2"></i>
+
+									View Details
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+					<div class="shadow-lg rounded-lg">
+
+						<img src="./images/products/men/product1(1).jpg" class="rounded-tl-lg rounded-tr-lg"
+							alt="product" />
+
+						<div class="p-5">
+							<h3><a href="#">Mens T-Shirt</a></h3>
+							<div class="flex flex-row my-3">
+								<div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-red-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-green-700 rounded-full h-5 w-5 shadow-md mr-2"></div>
+							</div>
+							<div class="flex flex-row my-3">
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XXL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">L</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">M</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">S</a>
+							</div>
+							<div class="flex flex-col xl:flex-row justify-between">
+								<a class="btn btn-cart" href="#">
+									<i class="fa fa-shopping-cart pr-2 fa-lg"></i>
+
+									Add to cart
+								</a>
+								<a class="btn btn-details" href="#">
+									<i class="fa fa-arrow-right pr-2"></i>
+
+									View Details
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+					<div class="shadow-lg rounded-lg">
+
+						<img src="./images/products/men/product2(2).jpg" class="rounded-tl-lg rounded-tr-lg"
+							alt="product" />
+
+						<div class="p-5">
+							<h3><a href="#">Slim Khaki Tousers</a></h3>
+							<div class="flex flex-row my-3">
+								<div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-slate-500 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-red-100 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-cyan-50 rounded-full h-5 w-5 shadow-md mr-2"></div>
+							</div>
+							<div class="flex flex-row my-3">
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XXL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">L</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">M</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">S</a>
+							</div>
+							<div class="flex flex-col xl:flex-row justify-between">
+								<a class="btn btn-cart" href="#">
+									<i class="fa fa-shopping-cart pr-2 fa-lg"></i>
+
+									Add to cart
+								</a>
+								<a class="btn btn-details" href="#">
+									<i class="fa fa-arrow-right pr-2"></i>
+
+									View Details
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- end men's Collection Section -->
+
+
+		<!-- Women's Collection Section -->
+
+		<div class="my-20">
+			<div class="flex flex-row justify-between my-5">
+				<h2 class="text-3xl">Women's Collection</h2>
+
+			</div>
+			<div class=" flex flex-wrap">
+				<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+					<div class="shadow-lg rounded-lg">
+
+						<img src="./images/products/women/product1(1).webp" class="rounded-tl-lg rounded-tr-lg"
+							alt="product" />
+
+						<div class="p-5">
+							<h3><a href="#">V Neck Tassel Cape</a></h3>
+							<div class="flex flex-row my-3">
+								<div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-red-400 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-yellow-200 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-green-900 rounded-full h-5 w-5 shadow-md mr-2"></div>
+							</div>
+							<div class="flex flex-row my-3">
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XXL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">L</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">M</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">S</a>
+							</div>
+							<div class="flex flex-col xl:flex-row justify-between">
+								<a class="btn btn-cart" href="#">
+									<i class="fa fa-shopping-cart pr-2 fa-lg"></i>
+
+									Add to cart
+								</a>
+								<a class="btn btn-details" href="#">
+									<i class="fa fa-arrow-right pr-2"></i>
+
+									View Details
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+					<div class="shadow-lg rounded-lg">
+
+						<img src="./images/products/women/product2(2).webp" class="rounded-tl-lg rounded-tr-lg"
+							alt="product" />
+
+						<div class="p-5">
+							<h3><a href="#">Printed Wrap Dress</a></h3>
+							<div class="flex flex-row my-3">
+								<div class="bg-pink-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-50 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-yellow-400 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-pink-300 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-green-300 rounded-full h-5 w-5 shadow-md mr-2"></div>
+							</div>
+							<div class="flex flex-row my-3">
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XXL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">L</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">M</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">S</a>
+							</div>
+							<div class="flex flex-col xl:flex-row justify-between">
+								<a class="btn btn-cart" href="#">
+									<i class="fa fa-shopping-cart pr-2 fa-lg"></i>
+
+									Add to cart
+								</a>
+								<a class="btn btn-details" href="#">
+									<i class="fa fa-arrow-right pr-2"></i>
+
+									View Details
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+					<div class="shadow-lg rounded-lg">
+
+						<img src="./images/products/women/product3(3).webp" class="rounded-tl-lg rounded-tr-lg"
+							alt="product" />
+
+						<div class="p-5">
+							<h3><a href="#">Blue Denim Dress</a></h3>
+							<div class="flex flex-row my-3">
+								<div class="bg-slate-500 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-50 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-900 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-300 rounded-full h-5 w-5 shadow-md mr-2"></div>
+							</div>
+							<div class="flex flex-row my-3">
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XXL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">L</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">M</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">S</a>
+							</div>
+							<div class="flex flex-col xl:flex-row justify-between">
+								<a class="btn btn-cart" href="#">
+									<i class="fa fa-shopping-cart pr-2 fa-lg"></i>
+
+									Add to cart
+								</a>
+								<a class="btn btn-details" href="#">
+									<i class="fa fa-arrow-right pr-2"></i>
+
+									View Details
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+					<div class="shadow-lg rounded-lg">
+
+						<img src="./images/products/women/product4(4).webp" class="rounded-tl-lg rounded-tr-lg"
+							alt="product" />
+
+						<div class="p-5">
+							<h3><a href="#">High Waist Denim Skirt</a></h3>
+							<div class="flex flex-row my-3">
+								<div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-red-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-green-700 rounded-full h-5 w-5 shadow-md mr-2"></div>
+							</div>
+							<div class="flex flex-row my-3">
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XXL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">L</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">M</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">S</a>
+							</div>
+							<div class="flex flex-col xl:flex-row justify-between">
+								<a class="btn btn-cart" href="#">
+									<i class="fa fa-shopping-cart pr-2 fa-lg"></i>
+
+									Add to cart
+								</a>
+								<a class="btn btn-details" href="#">
+									<i class="fa fa-arrow-right pr-2"></i>
+
+									View Details
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+					<div class="shadow-lg rounded-lg">
+
+						<img src="./images/products/women/product3(3).webp" class="rounded-tl-lg rounded-tr-lg"
+							alt="product" />
+
+						<div class="p-5">
+							<h3><a href="#">Blue Denim Dress</a></h3>
+							<div class="flex flex-row my-3">
+								<div class="bg-slate-500 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-800 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-50 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-900 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-blue-300 rounded-full h-5 w-5 shadow-md mr-2"></div>
+							</div>
+							<div class="flex flex-row my-3">
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XXL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">L</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">M</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">S</a>
+							</div>
+							<div class="flex flex-col xl:flex-row justify-between">
+								<a class="btn btn-cart" href="#">
+									<i class="fa fa-shopping-cart pr-2 fa-lg"></i>
+
+									Add to cart
+								</a>
+								<a class="btn btn-details" href="#">
+									<i class="fa fa-arrow-right pr-2"></i>
+
+									View Details
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+					<div class="shadow-lg rounded-lg">
+
+						<img src="./images/products/women/product1(1).webp" class="rounded-tl-lg rounded-tr-lg"
+							alt="product" />
+
+						<div class="p-5">
+							<h3><a href="#">V Neck Tassel Cape</a></h3>
+							<div class="flex flex-row my-3">
+								<div class="bg-black rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-red-400 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-white rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-yellow-200 rounded-full h-5 w-5 shadow-md mr-2"></div>
+								<div class="bg-green-900 rounded-full h-5 w-5 shadow-md mr-2"></div>
+							</div>
+							<div class="flex flex-row my-3">
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">XXL</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">L</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">M</a>
+								<a class="border-black-300 border-2 text-black-400 rounded-md px-2 py-1 mr-2 text-xs"
+									href="#">S</a>
+							</div>
+							<div class="flex flex-col xl:flex-row justify-between">
+								<a class="btn btn-cart" href="#">
+									<i class="fa fa-shopping-cart pr-2 fa-lg"></i>
+
+									Add to cart
+								</a>
+								<a class="btn btn-details" href="#">
+									<i class="fa fa-arrow-right pr-2"></i>
+
+									View Details
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<section class="text-gray-700 pb-24 body-font">
+			<div class="container px-3  mx-auto">
+				<div class="flex flex-wrap w-full mb-14 flex-col items-center text-center">
+					<h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">PINK <span
+							class="text-pink-700">ARRIAVAL</span>
+					</h1>
+					<p class="lg:w-1/2 w-full leading-relaxed text-base">WhatTaking Care Of All Of Your Needs
+					</p>
+				</div>
+				<div class="flex flex-wrap -m-4">
+					<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+						<div
+							class="relative border border-black-300 overflow-hidden p-6 rounded-lg z-[1] after:content-[''] after:bg-[#ff1493] after:absolute after:top-0 after:-left-full after:transition-all after:h-full after:w-full after:hover:left-0 after:z-[-1]">
+							<div class=" inline-flex items-center justify-center rounded-full text-indigo-500 mb-4">
+								<a href="#">
+									<img src="./images/products/comming-soon/product-1.jpg"
+										class="w-full h-3/5 rounded-tl-lg rounded-tr-lg hover:skew-y-12"
+										alt="product" />
+								</a>
+
+							</div>
+							<h2 class="text-lg text-gray-900 font-medium title-font mb-2">Rs 800</h2>
+							<p class="leading-relaxed text-base"> GULMOHAR JAIPUR TOP</p>
+						</div>
+					</div>
+					<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+						<div
+							class="relative border border-black-300 overflow-hidden p-6 rounded-lg z-[1] after:content-[''] after:bg-[#ff1493] after:absolute after:top-0 after:-left-full after:transition-all after:h-full after:w-full after:hover:left-0 after:z-[-1]">
+							<div class=" inline-flex items-center justify-center rounded-full text-indigo-500 mb-4">
+								<a href="#">
+									<img src="./images/products/comming-soon/product-2.jpg"
+										class="w-full h-3/5 rounded-tl-lg rounded-tr-lg hover:skew-y-12"
+										alt="product" />
+								</a>
+
+							</div>
+							<h2 class="text-lg text-gray-900 font-medium title-font mb-2">Rs 2200</h2>
+							<p class="leading-relaxed text-base">YOYO BLAZER</p>
+						</div>
+					</div>
+					<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+						<div
+							class="relative border border-black-300 overflow-hidden p-6 rounded-lg z-[1] after:content-[''] after:bg-[#ff1493] after:absolute after:top-0 after:-left-full after:transition-all after:h-full after:w-full after:hover:left-0 after:z-[-1]">
+							<div class=" inline-flex items-center justify-center rounded-full text-indigo-500 mb-4">
+								<a href="#">
+									<img src="./images/products/comming-soon/product-3.jpg"
+										class="w-full h-3/5 rounded-tl-lg rounded-tr-lg hover:skew-y-12"
+										alt="product" />
+								</a>
+
+							</div>
+							<h2 class="text-lg text-gray-900 font-medium title-font mb-2">Rs 1800</h2>
+							<p class="leading-relaxed text-base">SLIM FORMAL</p>
+						</div>
+					</div>
+					<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+						<div
+							class="relative border border-black-300 overflow-hidden p-6 rounded-lg z-[1] after:content-[''] after:bg-[#ff1493] after:absolute after:top-0 after:-left-full after:transition-all after:h-full after:w-full after:hover:left-0 after:z-[-1]">
+							<div class=" inline-flex items-center justify-center rounded-full text-indigo-500 mb-4">
+								<a href="#">
+									<img src="./images/products/comming-soon/product-4.jpg"
+										class="w-full h-3/5 rounded-tl-lg rounded-tr-lg hover:skew-y-12"
+										alt="product" />
+								</a>
+
+							</div>
+							<h2 class="text-lg text-gray-900 font-medium title-font mb-2">Rs 790</h2>
+							<p class="leading-relaxed text-base">FIT BODYCON</p>
+						</div>
+					</div>
+					<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+						<div
+							class="relative border border-black-300 overflow-hidden p-6 rounded-lg z-[1] after:content-[''] after:bg-[#ff1493] after:absolute after:top-0 after:-left-full after:transition-all after:h-full after:w-full after:hover:left-0 after:z-[-1]">
+							<div class=" inline-flex items-center justify-center rounded-full text-indigo-500 mb-4">
+								<a href="#">
+									<img src="./images/products/comming-soon/product-5.jpg"
+										class="w-full h-3/5 rounded-tl-lg rounded-tr-lg hover:skew-y-12"
+										alt="product" />
+								</a>
+
+							</div>
+							<h2 class="text-lg text-gray-900 font-medium title-font mb-2">Rs 1500</h2>
+							<p class="leading-relaxed text-base">CLASSSIC ETIHC</p>
+						</div>
+					</div>
+					<div class="xl:w-1/3 sm:w-1/2 xs:w-[320px] p-4">
+						<div
+							class="relative border border-black-300 overflow-hidden p-6 rounded-lg z-[1] after:content-[''] after:bg-[#ff1493] after:absolute after:top-0 after:-left-full after:transition-all after:h-full after:w-full after:hover:left-0 after:z-[-1]">
+							<div class=" inline-flex items-center justify-center rounded-full text-indigo-500 mb-4">
+								<a href="#">
+									<img src="./images/products/comming-soon/product-6.jpg"
+										class="w-full h-3/5 rounded-tl-lg rounded-tr-lg hover:skew-y-12"
+										alt="product" />
+								</a>
+
+							</div>
+							<h2 class="text-lg text-gray-900 font-medium title-font mb-2">RS 3000</h2>
+							<p class="leading-relaxed text-base">TWO WAY</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- End Women's Collection Section -->
+
+		<div class="rounded-lg shadow-lg flex flex-row">
+			<div
+				class="lg:w-3/5 w-full bg-gradient-to-r from-black to-purple-900 lg:from-black lg:via-purple-900 lg:to-transparent rounded-lg text-gray-100 p-12">
+
+				<h3 class="text-4xl font-extrabold mb-4">get our offers first</h3>
+				<p class="mb-4 leading-relaxed ">Want to hear from us when we have new offers?<br>
+					GET THE LATEST NEWS & OFFERS IN BEAUTY & FASHION
+				</p>
+				<div>
+					<div class="lg:w-1/2">
+						<input type="email" placeholder="Enter email address"
+							class="btn btn-cart placeholder-gray-400 px-4 py-3 w-full rounded-lg focus:outline-none mb-4" />
+						<button type="submit" class="btn btn-details w-full">Subscribe</button>
+					</div>
+				</div>
+			</div>
+			<div class="lg:w-2/5 w-full lg:flex lg:flex-row hidden">
+				<img src="./images/subscribe-banner.webp" class="h-96" alt="product" />
+			</div>
+		</div>
+
+	</div>
+
+	<!-- footer-->
+
+
+	<footer class="bg-purple-400">
+		<div class="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-black uppercase">About Select</h2>
+				<ul class="text-black-300">
+					<li class="mb-4">
+						<a href="#" class=" hover:underline underline-offset-4
+	">Why choose select?</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline underline-offset-4
+	">Special Offers</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline underline-offset-4
+	">Store Finder</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline underline-offset-4
+	">Modern Slavery Statement</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-black uppercase">Help center</h2>
+				<ul class="text-black">
+					<li class="mb-4">
+						<a href="#" class="hover:underline underline-offset-4
+	">Track my order
+						</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline underline-offset-4
+	">Twitter</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline underline-offset-4
+	">Facebook
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-black uppercase">Information
+				</h2>
+				<ul class="text-black">
+					<li class="mb-4">
+						<a href="#" class="hover:underline underline-offset-4
+	">Delivery Information
+						</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline underline-offset-4
+	">Payment Options
+						</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline underline-offset-4
+	">Size Guide
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-black uppercase">Connect with us
+				</h2>
+				<ul class="text-black">
+					<li class="mb-4">
+						<a href="#" class="hover:underline underline-offset-4
+	">Customer Service
+						</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline underline-offset-4
+	">Login/Register
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="py-6 px-4 bg-purple-500 md:flex md:items-center md:justify-between">
+			<span class="text-sm text-black sm:text-center">© 2022 <a href="#">Fashion</a> @All Rights Reserved.
+			</span>
+			<div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
+				<a href="#" class="text-black hover:text-white" aria-label="yourfacebook"> <span
+						class="hidden">abc</span>
+					<i class="fa fa-facebook"></i>
+
+				</a>
+				<a href="#" class="text-black hover:text-white" aria-label="yourinstagram"><span
+						class="hidden">abc</span>
+					<i class="fa fa-instagram"></i>
+
+				</a>
+				<a href="#" class="text-black hover:text-white" aria-label="yourtwitter"><span class="hidden">abc</span>
+					<i class="fa fa-twitter"></i>
+
+				</a>
+				<a href="#" class="text-black hover:text-white" aria-label="yourpinterest"><span
+						class="hidden">abc</span>
+					<i class="fa fa-pinterest-p"></i>
+
+				</a>
+				<a href="#" class="text-black hover:text-white" aria-label="yourlocation"><span
+						class="hidden">abc</span>
+					<i class="fa fa-map-marker"></i>
+
+				</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- slick-slider -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<!-- end-slick-slider -->
+	<!-- swiper-slider -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- end-swiper-slider -->
+
+	<script type="text/javascript" src="custom.js"></script>
+</body>
+
+</html>
